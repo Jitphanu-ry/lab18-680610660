@@ -224,7 +224,6 @@ router.put(
         });
       }
 
-      // 5. Update only provided fields
       const updated = await prisma.student.update({
         where: { studentId },
         data,
